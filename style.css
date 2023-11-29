@@ -19,7 +19,7 @@ body {
 .background-section {
   flex-grow: 1;
   max-width: 480px;
-  background-image: url(./assets/register/Rectangle\ 289bg_register.png);
+  background-image: url(./assets/login/Rectangle\ 289bg_login.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -60,7 +60,7 @@ form {
   text-align: left;
 }
 
-.register-title {
+.page-form-title {
   color: #8E6447;
   font-size: 22px;
   font-weight: 600;
@@ -89,6 +89,7 @@ label {
   letter-spacing: 0em;
   margin: 0 0 16px 0;
   text-align: left;
+  cursor: pointer;
 }
 
 /* input */
@@ -114,6 +115,10 @@ label {
   margin: 0;
 }
 
+.input-icon.password-visibility:hover {
+  cursor: pointer;
+}
+
 .input-box.confirm-password{
   margin-bottom: 0;
 }
@@ -126,6 +131,20 @@ label {
   letter-spacing: 0.75px;
   padding: 0 0 0 0;
   text-align: left
+}
+
+.forgot-password {
+  text-align: right;
+  text-decoration: none;
+  color: #FF8906;
+}
+
+.forgot-password:hover {
+  opacity: 0.7;
+}
+
+.forgot-password:active {
+  color: #0B132A;
 }
 
 button {
@@ -142,6 +161,7 @@ button {
   margin: 25px 0 28px 0;
   text-align: center;
   transition: all .3s;
+  cursor: pointer;
 }
 
 button:hover {
@@ -235,6 +255,7 @@ hr {
   max-width: 384px;
   text-align: center;
   transition: all .2s;
+  cursor: pointer;
 }
 
 .facebook-button:hover,
