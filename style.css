@@ -1,0 +1,265 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.content-container {
+  max-width: 1440px;
+  height: 1024px;
+  display: flex;
+  flex-direction: row;
+}
+
+.background-section {
+  flex-grow: 1;
+  max-width: 480px;
+  background-image: url(./assets/register/Rectangle\ 289bg_register.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form-section {
+  background-color: #ffffff;
+  flex-grow: 1;
+}
+
+form {
+  max-width: 780px;
+  margin: 64px 75px 0 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* company logo & title */
+.company-title {
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.coffee-logo {
+  width: 28px;
+  height: 26px;
+  margin-right: 15px;
+}
+
+.coffee-title {
+  color: #8E6447;
+  font-family: 'Sacramento', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  margin: 0;
+  text-align: left;
+}
+
+.register-title {
+  color: #8E6447;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;  
+  margin: 0 0 28px 0;
+}
+
+.fill-out-command {
+  color: #4F5665;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin: 0 0 28px 0;
+  text-align: left;
+}
+
+/* label */
+label {
+  color: #0B132A;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin: 0 0 16px 0;
+  text-align: left;
+}
+
+/* input */
+.input-box {
+  border: 1px solid #DEDEDE;
+  border-radius: 8px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 28px 0;
+}
+
+.input-icon {
+  flex-grow: 1;
+  height: 16px;
+  padding: 0 10px;
+}
+
+.input-field {
+  border: none;
+  flex-grow: 25;
+  height: 42px;
+  margin: 0;
+}
+
+.input-box.confirm-password{
+  margin-bottom: 0;
+}
+
+::placeholder {
+  color: #4F5665;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.75px;
+  padding: 0 0 0 0;
+  text-align: left
+}
+
+button {
+  color: #0B132A;
+  border: none;
+  border-radius: 6px;
+  background-color: #FF8906;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin: 25px 0 28px 0;
+  text-align: center;
+  transition: all .3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  opacity: 1;
+  transform: scale(0.98);
+}
+
+p.account-already {
+  color: #4F5665;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin: 0 0 28px 0;
+  text-align: center;
+}
+
+p.account-already>a {
+  text-decoration: none;
+  color: #FF8906;
+}
+
+p.account-already>a:hover {
+  opacity: 0.7;
+}
+
+p.account-already>a:active {
+  color: #0B132A;
+}
+
+.or-container {
+  display: inline-block;
+  position: relative;
+}
+
+hr {
+  border: none;
+  background-color: #DEDEDE;
+  height: 1px;
+}
+
+.or-text {
+  background-color: #ffffff;
+  bottom: 0;
+  color: #AAAAAA;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0.005em;
+  line-height: 15px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 100px;
+}
+
+.web-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 24px 0 0 0;
+}
+
+
+.facebook-button {
+  margin: 0 7px 0 0;
+}
+.google-button {
+  margin: 0 0 0 7px;
+}
+
+.facebook-button,
+.google-button {
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 6px 1px rgba(180, 180, 180, .1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 64px;
+  justify-content: center;
+  max-width: 384px;
+  text-align: center;
+  transition: all .2s;
+}
+
+.facebook-button:hover,
+.google-button:hover {
+  opacity: 0.7;
+} 
+.facebook-button:active,
+.google-button:active {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 0px 0px rgba(180, 180, 180, .1);
+} 
+
+.facebook-icon,
+.google-icon {
+  width: 20px;
+  margin: 0 22px 0 0;
+}
+
+.facebook-text,
+.google-text {
+  color: #4F5665;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0.005em;
+  margin: 0;
+  text-align: center;
+}
