@@ -14,25 +14,26 @@ body {
   height: 1024px;
   display: flex;
   flex-direction: row;
+  /* align-items: center; */
 }
 
 .background-section {
   flex-grow: 1;
   max-width: 480px;
-  background-image: url(./assets/login/Rectangle\ 289bg_login.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:top;
   background-size: cover;
 }
 
 .form-section {
   background-color: #ffffff;
   flex-grow: 1;
+  align-self: center;
 }
 
 form {
   max-width: 780px;
-  margin: 64px 75px 0 75px;
+  margin: 0 75px 0 75px;
   display: flex;
   flex-direction: column;
 }
@@ -119,7 +120,8 @@ label {
   cursor: pointer;
 }
 
-.input-box.confirm-password{
+.input-box.confirm-password,
+.input-box.email{
   margin-bottom: 0;
 }
 
@@ -137,6 +139,10 @@ label {
   text-align: right;
   text-decoration: none;
   color: #FF8906;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
 }
 
 .forgot-password:hover {
