@@ -114,6 +114,7 @@ label {
   flex-grow: 25;
   height: 42px;
   margin: 0;
+  border-radius: 8px;
 }
 
 .input-icon.password-visibility:hover {
@@ -125,7 +126,7 @@ label {
   margin-bottom: 0;
 }
 
-::placeholder {
+.input-box::placeholder {
   color: #4F5665;
   font-size: 12px;
   font-weight: 400;
@@ -663,4 +664,33 @@ button:active {
 
 .today-promo-label>p>span {
   color: #8E6447;
+}
+
+@media screen and (max-width: 576px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .background-section {
+    flex-grow: unset;
+    width: unset;
+  }
+
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100vw;
+  }
+
+  form {
+    width: 80%;
+    margin: 0;
+  }
+
 }
