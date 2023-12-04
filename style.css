@@ -616,3 +616,51 @@ button:active {
   justify-content: center;
   align-items: center;
 }
+
+/* product page*/
+.bg-product {
+  background-image: url(./assets/product/Rectangle\ 299bg-product.jpg);
+  height: 305px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-product-intro {
+  color: #FFFFFF;
+  width: 70%;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.today-promo-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.today-promo-label {
+  width: 70vw;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.today-promo-label>p {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.today-promo-label>p>span {
+  color: #8E6447;
+}
