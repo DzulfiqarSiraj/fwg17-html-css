@@ -9,6 +9,98 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+/* nav */
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 80px;
+  background-color: black;
+}
+
+.navbar {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar div {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.navbar.left,
+.navbar.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar.left {
+  justify-content: center;
+  gap: 80px;
+}
+
+.navbar.left div:nth-child(2):hover,
+.navbar.left div:nth-child(3):hover {
+  border-bottom: 1px solid #FF8906;
+  padding-bottom: 10px;
+}
+
+.company-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.company-logo > div {
+  position: relative;
+  padding: 0 0 0 35px;
+  font-family: Sacramento;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.company-logo > div > img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar.right {
+  justify-content: center;
+  gap: 40px;
+}
+
+.navbar.right .search,
+.navbar.right .cart {
+  width: 28px;
+}
+
+.navbar.right div img {
+  width: 100%;
+}
+
+.btn {
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
+
+
 .content-container {
   max-width: 1440px;
   height: 1024px;
@@ -293,69 +385,6 @@ hr {
 }
 
 /* chat page */
-nav {
-  background-color: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  display: flex;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 76px;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-ul {
-  list-style: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-
-li {
-  float: left;
-  margin: 0 20px 0 0;
-}
-
-li:nth-child(1) a{
-  display: flex;
-  align-items: center;
-}
-
-li:nth-child(3){
-  margin: 0 300px 0 0;
-}
-
-li:nth-child(4){
-  margin: 0 0 0 300px;
-}
-
-li a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.brand-logo {
-  display: inline-block;
-  fill: #ffffffff;
-}
-
-.brand-title {
-  display: inline-block;
-  margin: 0;
-  font-family: 'Sacramento', cursive;
-  font-Weight: 400;
-  Size: 20px;
-  Line-height: 29.19px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
 .container-section-one, 
 .container-section-two {
   width: 100vw;
