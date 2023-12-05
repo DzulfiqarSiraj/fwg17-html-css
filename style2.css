@@ -367,16 +367,21 @@ label {
 }
 
 .checkout-product > section.left > div:nth-child(7) > div:nth-child(2) > div {
+    color: #4F5665;
     flex-grow: 1;
     height: 42px;
     border: 1px solid #DEDEDE;
     border-radius: 8px;
+    justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: row;
     padding: 0 30px;
 }
 
+.checkout-product > section.left > div:nth-child(7) > div:nth-child(2) > div:hover {
+    border-color: #FF8906;
+}
 
 /* history order page */
 /* main */
